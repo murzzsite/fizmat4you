@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФизМат4You — онлайн-школа физики и математики. Подготовка к ОГЭ, ЕГЭ, олимпиадам</title>
+  <meta name="description" content="Онлайн-репетиторство по физике и математике с 2016 года. 5 уровней сложности: школьная программа, углублённый уровень, ОГЭ, ЕГЭ, олимпиады. Тестовое занятие 1390 ₽.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <rect width="38" height="38" rx="10" fill="#2454a8"/>
+          <ellipse cx="19" cy="19" rx="12" ry="5" stroke="#fff" stroke-width="1.6"/>
+          <ellipse cx="19" cy="19" rx="12" ry="5" stroke="#fff" stroke-width="1.6" transform="rotate(60 19 19)"/>
+          <ellipse cx="19" cy="19" rx="12" ry="5" stroke="#e3a11a" stroke-width="1.6" transform="rotate(120 19 19)"/>
+          <circle cx="19" cy="19" r="2.6" fill="#e3a11a"/>
+        </svg>
+      </span>
+      <div class="logo__texts">
+        <span class="logo__name">ФизМат4You</span>
+        <span class="logo__role">физика · математика</span>
+      </div>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#advantages">Почему мы</a>
+      <a href="#levels">Уровни</a>
+      <a href="#prices">Цены</a>
+      <a href="#process">Как проходят занятия</a>
+      <a href="#for-whom">Кому подходит</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="header__right">
+      <a href="https://t.me/Galchinskiy" target="_blank" rel="noopener" class="header__phone">@Galchinskiy</a>
+      <a href="#contact" class="btn btn--sm">Записаться на тест</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge">Онлайн-школа физики и математики · с 2016 года</div>
+      <h1 class="hero__title">Физика и математика — это <em>система</em>, а не везение на экзамене</h1>
+      <p class="hero__desc">Помогаю ученикам с 1 по 11 класс закрыть пробелы, подготовиться к ОГЭ, ЕГЭ и олимпиадам. Занимаюсь онлайн-репетиторством с 2016 года, свою школу веду с 2019-го — за это время выстроил систему из 5 уровней сложности под любую задачу.</p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--lg btn--primary">Записаться на тестовое занятие</a>
+        <a href="#levels" class="btn btn--lg btn--ghost">Смотреть уровни и цены</a>
+      </div>
+      <div class="hero__proof">
+        <span class="proof-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 5.4H15L10.1 9.7l1.8 5.4L8 12l-3.9 3.1 1.8-5.4L1 6.4h5.2L8 1z" fill="#e3a11a"/></svg>
+          Тестовое занятие перед стартом — 1390 ₽
+        </span>
+        <span class="proof-sep">·</span>
+        <span class="proof-item">Полностью онлайн, любой часовой пояс</span>
+      </div>
+    </div>
+    <div class="hero__cards">
+      <div class="hstat hstat--accent">
+        <div class="hstat__num">10<span>лет</span></div>
+        <div class="hstat__label">в онлайн-образовании с 2016 года</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat__num">15</div>
+        <div class="hstat__label">учеников занимаются на постоянной основе</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat__num">5</div>
+        <div class="hstat__label">уровней сложности — от школьной программы до олимпиад</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat__num">2019</div>
+        <div class="hstat__label">год открытия собственной школы</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="advantages" id="advantages">
+  <div class="container">
+    <h2 class="section-title section-title--center">Почему выбирают ФизМат4You</h2>
+    <p class="section-sub section-sub--center">Не разовые уроки «на удачу», а системная работа с понятным результатом на каждом этапе</p>
+    <div class="adv-grid">
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><path d="M9 20l3-8 3 4 3-9 3 13" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Тестовое занятие перед стартом</h3>
+        <p>Не гадаем с уровнем — сначала диагностика по конкретному предмету, потом программа под реальные пробелы.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><path d="M8 22V9M15 22V6M22 22v-9" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>5 уровней сложности</h3>
+        <p>От базовой школьной программы 1-8 класса до углублённого изучения и олимпиадных задач — своя ступень под каждую цель.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><path d="M15 8v14M8 15h14" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/><circle cx="15" cy="15" r="10" stroke="#e3a11a" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Целевая подготовка к ОГЭ и ЕГЭ</h3>
+        <p>Разбираем структуру экзамена, типовые задания и частые ошибки — не «повторяем всё подряд», а бьём точно по формату.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><path d="M9 20l6-6 3 3 6-8" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Опыт с 2016 года</h3>
+        <p>10 лет в онлайн-образовании, собственная школа с 2019 года — программа проверена на практике, а не собрана «с нуля».</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><rect x="7" y="9" width="16" height="13" rx="2" stroke="#2454a8" stroke-width="1.8"/><path d="M11 9V6M19 9V6" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Полностью онлайн</h3>
+        <p>Занимаетесь из любой точки в удобное время — гибкое расписание без привязки к городу и переездам.</p>
+      </div>
+      <div class="adv">
+        <div class="adv__icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><rect width="30" height="30" rx="8" fill="#eaf1fb"/><circle cx="15" cy="12" r="4" stroke="#2454a8" stroke-width="1.8"/><path d="M8 23c0-4 3-7 7-7s7 3 7 7" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Индивидуальная программа</h3>
+        <p>Не групповой курс «для всех» — план строится под конкретного ученика, его пробелы и цель.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- УРОВНИ / УСЛУГИ -->
+<section class="levels" id="levels">
+  <div class="container">
+    <h2 class="section-title section-title--center">5 уровней занятий</h2>
+    <p class="section-sub section-sub--center">Каждый следующий уровень — глубже и сложнее. Начинаем с тестового занятия, чтобы понять, какой подходит именно вам</p>
+    <div class="level-grid">
+      <div class="level">
+        <div class="level__num">Тест</div>
+        <h3 class="level__title">Тестовое занятие</h3>
+        <p class="level__desc">Определяем реальный уровень знаний по одному предмету — физике или математике — и составляем план дальнейших занятий.</p>
+        <div class="level__price">1 390 <span>₽</span></div>
+      </div>
+      <div class="level">
+        <div class="level__num">1</div>
+        <h3 class="level__title">Базовый уровень (1–8 класс)</h3>
+        <p class="level__desc">Школьная программа, разбор текущих тем, помощь с домашними заданиями, устранение пробелов прошлых лет.</p>
+        <div class="level__price">1 390 <span>₽/час</span></div>
+      </div>
+      <div class="level">
+        <div class="level__num">2</div>
+        <h3 class="level__title">Базовый уровень (9–11 класс)</h3>
+        <p class="level__desc">Программа старшей школы, подготовка к текущим контрольным и итоговым работам.</p>
+        <div class="level__price">1 530 <span>₽/час</span></div>
+      </div>
+      <div class="level level--featured">
+        <div class="level__popular">Часто выбирают</div>
+        <div class="level__num">3</div>
+        <h3 class="level__title">Углублённый уровень</h3>
+        <p class="level__desc">Для профильных классов и программы повышенной сложности — глубже школьного минимума.</p>
+        <div class="level__price">1 670 <span>₽/час</span></div>
+      </div>
+      <div class="level">
+        <div class="level__num">4</div>
+        <h3 class="level__title">ОГЭ и ЕГЭ</h3>
+        <p class="level__desc">Целевая подготовка к экзаменам: разбор заданий части 1 и 2, отработка формата и типовых ошибок.</p>
+        <div class="level__price">1 730 <span>₽/час</span></div>
+      </div>
+      <div class="level level--gold">
+        <div class="level__num">5</div>
+        <h3 class="level__title">Олимпиады и спецпредметы</h3>
+        <p class="level__desc">Подготовка к олимпиадам и профильным конкурсам, нестандартные задачи повышенной сложности.</p>
+        <div class="level__price">от 2 220 <span>₽/час</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРАЙС-ТАБЛИЦА -->
+<section class="prices" id="prices">
+  <div class="container">
+    <h2 class="section-title section-title--center">Прайс-лист</h2>
+    <p class="section-sub section-sub--center">Стоимость одного академического часа занятий по физике или математике</p>
+    <div class="price-table">
+      <div class="price-row price-row--head">
+        <div>Формат занятия</div>
+        <div>Стоимость</div>
+      </div>
+      <div class="price-row">
+        <div>Тестовое занятие (1 предмет)</div>
+        <div>1 390 ₽</div>
+      </div>
+      <div class="price-row">
+        <div>Уровень 1 — базовый, 1–8 класс</div>
+        <div>1 390 ₽ / час</div>
+      </div>
+      <div class="price-row">
+        <div>Уровень 2 — базовый, 9–11 класс</div>
+        <div>1 530 ₽ / час</div>
+      </div>
+      <div class="price-row">
+        <div>Уровень 3 — углублённый</div>
+        <div>1 670 ₽ / час</div>
+      </div>
+      <div class="price-row">
+        <div>Уровень 4 — подготовка к ОГЭ и ЕГЭ</div>
+        <div>1 730 ₽ / час</div>
+      </div>
+      <div class="price-row price-row--gold">
+        <div>Уровень 5 — олимпиады и спецпредметы</div>
+        <div>от 2 220 ₽ / час</div>
+      </div>
+    </div>
+    <div class="price-note">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#2454a8" stroke-width="1.5"/><path d="M10 9v5M10 7v.5" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <p>Начните с тестового занятия за <em>1 390 ₽</em> — по его итогам подберём подходящий уровень и составим программу.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="process" id="process">
+  <div class="container">
+    <h2 class="section-title section-title--center">Как проходят занятия</h2>
+    <p class="section-sub section-sub--center">От первой заявки до уверенных знаний — пять понятных шагов</p>
+    <div class="process-grid">
+      <div class="step">
+        <div class="step__num">1</div>
+        <h3>Заявка</h3>
+        <p>Оставляете заявку на сайте или пишете напрямую в Telegram.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <h3>Тестовое занятие</h3>
+        <p>Определяем реальный уровень знаний по физике или математике — 1390 ₽.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <h3>Подбор уровня</h3>
+        <p>Составляем индивидуальную программу по одному из 5 уровней сложности.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <h3>Регулярные занятия</h3>
+        <p>Занимаемся онлайн по расписанию, отслеживаем прогресс и корректируем план.</p>
+      </div>
+      <div class="step step--accent">
+        <div class="step__num">5</div>
+        <h3>Результат</h3>
+        <p>Закрытые пробелы, уверенные знания, сданные экзамены или призовые места на олимпиадах.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОМУ ПОДХОДИТ -->
+<section class="forwho" id="for-whom">
+  <div class="container">
+    <h2 class="section-title section-title--center">Кому подходит ФизМат4You</h2>
+    <p class="section-sub section-sub--center">Четыре типичные ситуации — под каждую есть свой уровень программы</p>
+    <div class="fw-grid">
+      <div class="fw-card">
+        <div class="fw-card__age">1–8 класс</div>
+        <h3 class="fw-card__title">Нужна помощь с текущей программой</h3>
+        <p class="fw-card__text">Ребёнок теряется в школьной программе, плохо понимает тему на уроке, накопились пробелы прошлых лет.</p>
+      </div>
+      <div class="fw-card fw-card--featured">
+        <div class="fw-card__popular">Частый запрос</div>
+        <div class="fw-card__age">9–11 класс</div>
+        <h3 class="fw-card__title">Готовитесь к ОГЭ или ЕГЭ</h3>
+        <p class="fw-card__text">Нужна целевая работа по формату экзамена: разбор заданий части 1 и 2, отработка типовых ошибок.</p>
+      </div>
+      <div class="fw-card">
+        <div class="fw-card__age">Профильный класс</div>
+        <h3 class="fw-card__title">Нужен углублённый уровень</h3>
+        <p class="fw-card__text">Программа профильного класса сложнее базовой — нужен репетитор, который разбирается глубже школьного минимума.</p>
+      </div>
+      <div class="fw-card">
+        <div class="fw-card__age">Олимпиадники</div>
+        <h3 class="fw-card__title">Готовитесь к олимпиадам</h3>
+        <p class="fw-card__text">Нужны нестандартные задачи повышенной сложности и подготовка к профильным конкурсам.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <h2 class="section-title">Частые вопросы</h2>
+        <p class="section-sub">Если не нашли ответ — просто напишите в Telegram</p>
+        <a href="#contact" class="btn btn--primary">Задать свой вопрос</a>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__q">Как понять, какой уровень мне нужен?</summary>
+          <div class="faq__a">Начните с тестового занятия за 1390 ₽ — по одному предмету (физике или математике). По его итогам понятно, с какого уровня стоит стартовать и что подтянуть в первую очередь.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Занятия проходят онлайн или очно?</summary>
+          <div class="faq__a">Полностью онлайн — можно заниматься из любого города и часового пояса, без привязки к расписанию офлайн-встреч.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Можно заниматься только физикой или только математикой?</summary>
+          <div class="faq__a">Да, занятия ведутся отдельно по каждому предмету. Можно выбрать один или заниматься обоими — программа и уровень подбираются под каждый предмет отдельно.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Что если раньше уже занимались с репетиторами и не было результата?</summary>
+          <div class="faq__a">Тестовое занятие как раз для этого — покажет, где реальные пробелы и почему прошлые занятия не сработали, прежде чем строить новую программу.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Как быстро будет виден результат?</summary>
+          <div class="faq__a">Зависит от исходного уровня и цели: закрыть текущие пробелы можно за несколько занятий, а системная подготовка к ОГЭ, ЕГЭ или олимпиаде — это работа на месяцы вперёд.</div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Как записаться на занятия?</summary>
+          <div class="faq__a">Оставьте заявку в форме ниже или напишите напрямую в Telegram — @Galchinskiy. Договоримся о времени тестового занятия.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ФОРМА -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__info">
+        <h2 class="section-title">Записаться на <em>тестовое занятие</em></h2>
+        <p class="section-sub">Оставьте заявку — свяжусь в течение дня и договоримся о времени. Тестовое занятие по одному предмету — 1390 ₽.</p>
+        <div class="cinfo-list">
+          <div class="cinfo">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2a6 6 0 00-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 00-6-6z" stroke="#2454a8" stroke-width="1.8"/><circle cx="11" cy="8" r="2" stroke="#2454a8" stroke-width="1.5"/></svg>
+            <div>
+              <div class="cinfo__label">Формат</div>
+              <div class="cinfo__val">Полностью онлайн, любой город</div>
+            </div>
+          </div>
+          <div class="cinfo">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2a7 7 0 100 14A7 7 0 0011 2z" stroke="#2454a8" stroke-width="1.8"/><path d="M2 20c0-4 4-7 9-7s9 3 9 7" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <div>
+              <div class="cinfo__label">Связь с преподавателем</div>
+              <a href="https://t.me/Galchinskiy" target="_blank" rel="noopener" class="cinfo__val">@Galchinskiy в Telegram</a>
+            </div>
+          </div>
+          <div class="cinfo">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="14" rx="2" stroke="#2454a8" stroke-width="1.8"/><path d="M3 7l8 5 8-5" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <div>
+              <div class="cinfo__label">Соцсети школы</div>
+              <div class="cinfo__val">
+                <a href="https://t.me/fizmat4you" target="_blank" rel="noopener">Telegram</a> ·
+                <a href="https://vk.ru/fizmat4you" target="_blank" rel="noopener">ВК</a> ·
+                <a href="https://www.instagram.com/fizmat4you" target="_blank" rel="noopener">Instagram</a> ·
+                <a href="https://www.facebook.com/fizmat4you" target="_blank" rel="noopener">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="cinfo">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="#2454a8" stroke-width="1.8"/><path d="M11 7v4l2 2" stroke="#2454a8" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <div>
+              <div class="cinfo__label">Сайт</div>
+              <a href="https://fizmat4you.ru" target="_blank" rel="noopener" class="cinfo__val">fizmat4you.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-wrap">
+        <form class="form" id="leadForm" novalidate>
+          <h3 class="form__title">Оставить заявку</h3>
+          <p class="form__subtitle">Отвечаю лично в течение дня</p>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form__group">
+            <label class="form__label">Ваше имя *</label>
+            <input type="text" name="name" class="form__input" placeholder="Как вас зовут" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Телефон или Telegram *</label>
+            <input type="tel" name="phone" class="form__input" placeholder="+7 (___) ___-__-__ или @username" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Предмет</label>
+            <select name="subject" class="form__input form__select">
+              <option value="">Выберите предмет</option>
+              <option>Физика</option>
+              <option>Математика</option>
+              <option>Физика и математика</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Класс / уровень</label>
+            <select name="level" class="form__input form__select">
+              <option value="">Выберите класс</option>
+              <option>1–8 класс</option>
+              <option>9–11 класс</option>
+              <option>Углублённый уровень / профильный класс</option>
+              <option>Подготовка к ОГЭ</option>
+              <option>Подготовка к ЕГЭ</option>
+              <option>Олимпиады</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Комментарий</label>
+            <textarea name="comment" class="form__input form__textarea" placeholder="Что беспокоит: пробелы в теме, подготовка к экзамену, нужен разбор конкретных задач..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Записаться на тестовое занятие</button>
+          <p class="form__privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#" class="logo">
+        <span class="logo__mark">
+          <svg width="30" height="30" viewBox="0 0 38 38" fill="none"><rect width="38" height="38" rx="10" fill="#2454a8"/><ellipse cx="19" cy="19" rx="12" ry="5" stroke="#fff" stroke-width="1.6"/><ellipse cx="19" cy="19" rx="12" ry="5" stroke="#fff" stroke-width="1.6" transform="rotate(60 19 19)"/><ellipse cx="19" cy="19" rx="12" ry="5" stroke="#e3a11a" stroke-width="1.6" transform="rotate(120 19 19)"/><circle cx="19" cy="19" r="2.6" fill="#e3a11a"/></svg>
+        </span>
+        <div class="logo__texts">
+          <span class="logo__name">ФизМат4You</span>
+          <span class="logo__role">физика · математика</span>
+        </div>
+      </a>
+      <p class="footer__tagline">Онлайн-репетиторство по физике и математике с 2016 года. Своя школа — с 2019-го.</p>
+    </div>
+    <nav class="footer__nav">
+      <a href="#levels">Уровни</a>
+      <a href="#prices">Цены</a>
+      <a href="#process">Как проходят занятия</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://fizmat4you.ru" target="_blank" rel="noopener">Сайт</a>
+    </nav>
+    <div class="footer__legal">
+      <a href="https://t.me/Galchinskiy" target="_blank" rel="noopener" class="footer__phone">@Galchinskiy</a>
+      <div class="footer__addr">Онлайн-занятия · любой город</div>
+      <p><a href="#">Политика конфиденциальности</a></p>
+      <p class="footer__copy">© <span id="year"></span> ФизМат4You. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB — Telegram -->
+<a href="https://t.me/Galchinskiy" class="fab" target="_blank" rel="noopener" title="Написать в Telegram">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 3L2 10.5l6 2.2L10 19l3.5-4L18 18l3-15z" fill="#fff"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
