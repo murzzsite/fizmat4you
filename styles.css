@@ -44,10 +44,8 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
 .header.scrolled { border-color: var(--border); box-shadow: 0 2px 16px rgba(0,0,0,0.05); }
 .header__inner { display: flex; align-items: center; gap: 24px; min-width: 0; height: 68px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
-.logo__mark { display: flex; flex-shrink: 0; }
-.logo__texts { display: flex; flex-direction: column; line-height: 1.2; }
+.logo__img { display: block; height: 42px; width: 42px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
 .logo__name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; color: var(--text); white-space: nowrap; }
-.logo__role { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 20px; flex: 1; }
 .nav a { font-size: 13px; font-weight: 500; color: var(--text-2); text-decoration: none; white-space: nowrap; transition: color .15s; }
 .nav a:hover { color: var(--accent); }
@@ -78,6 +76,17 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
 .hstat__num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--accent); line-height: 1.1; margin-bottom: 6px; }
 .hstat__num span { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; margin-left: 2px; }
 .hstat__label { font-size: 13px; color: var(--text-2); line-height: 1.45; }
+
+/* ===== ABOUT / LICENSE ===== */
+.about { padding: 88px 0; background: var(--bg-2); }
+.about__inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start; }
+.about__text p { font-size: 15px; color: var(--text-2); line-height: 1.75; margin-bottom: 16px; }
+.about__text p:last-child { margin-bottom: 0; }
+.about__license { background: #fff; border: 1px solid var(--accent-mid); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); align-self: start; }
+.about__license-icon { margin-bottom: 14px; }
+.about__license-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.3; margin-bottom: 12px; }
+.about__license p { font-size: 14px; color: var(--text-2); line-height: 1.6; margin-bottom: 12px; }
+.about__license-num { display: inline-block; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; color: var(--accent); background: var(--accent-light); padding: 10px 14px; border-radius: 8px; line-height: 1.5; }
 
 /* ===== ADVANTAGES ===== */
 .advantages { padding: 88px 0; }
@@ -212,6 +221,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
   .fw-grid { grid-template-columns: repeat(2, 1fr); }
   .faq__inner { grid-template-columns: 1fr; gap: 32px; }
   .contact__inner { grid-template-columns: 1fr; gap: 40px; }
+  .about__inner { grid-template-columns: 1fr; gap: 32px; }
 }
 
 @media (max-width: 900px) {
@@ -239,6 +249,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
 
 @media (max-width: 380px) {
   .logo__name { font-size: 14px; }
+  .logo__img { height: 34px; width: 34px; }
   .hero__title { font-size: 28px; }
   .hero__cards { grid-template-columns: 1fr; }
 }
