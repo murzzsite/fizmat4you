@@ -43,6 +43,17 @@
     });
   });
 
+  // "Выбрать все предметы"
+  const subjectsAll = document.getElementById('subjectsAll');
+  const subjectsGrid = document.getElementById('subjectsGrid');
+  const subjectCheckboxes = subjectsGrid ? Array.from(subjectsGrid.querySelectorAll('input[type="checkbox"]')) : [];
+  subjectsAll?.addEventListener('change', () => {
+    subjectCheckboxes.forEach(cb => { cb.checked = subjectsAll.checked; });
+  });
+  subjectCheckboxes.forEach(cb => cb.addEventListener('change', () => {
+    if (subjectsAll) subjectsAll.checked = subjectCheckboxes.every(c => c.checked);
+  }));
+
   // ===== FORM SUBMIT → CLOUDFLARE WORKER → TELEGRAM =====
   const form = document.getElementById('leadForm');
   form?.addEventListener('submit', async e => {
@@ -52,7 +63,9 @@
 
     const fd = new FormData(form);
     const payload = {};
-    fd.forEach((v, k) => { payload[k] = v; });
+    fd.forEach((v, k) => { if (k !== 'subjects') payload[k] = v; });
+    const subjects = fd.getAll('subjects');
+    payload.subject = subjects.length ? subjects.join(', ') : '';
 
     // honeypot anti-bot
     if (payload._gotcha) return;

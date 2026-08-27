@@ -405,21 +405,24 @@
             <input type="tel" name="phone" class="form__input" placeholder="+7 (___) ___-__-__ или @username" required>
           </div>
           <div class="form__group">
-            <label class="form__label">Предмет</label>
-            <select name="subject" class="form__input form__select">
-              <option value="">Выберите предмет</option>
-              <option>Математика</option>
-              <option>Физика</option>
-              <option>Информатика</option>
-              <option>Русский язык</option>
-              <option>Литература</option>
-              <option>Английский язык</option>
-              <option>История</option>
-              <option>Обществознание</option>
-              <option>География</option>
-              <option>Химия</option>
-              <option>Биология</option>
-            </select>
+            <label class="form__label">Предметы (можно выбрать несколько)</label>
+            <label class="subject-check subject-check--all">
+              <input type="checkbox" id="subjectsAll">
+              Выбрать все предметы
+            </label>
+            <div class="subjects-grid" id="subjectsGrid">
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Математика">Математика</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Физика">Физика</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Информатика">Информатика</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Русский язык">Русский язык</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Литература">Литература</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Английский язык">Английский язык</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="История">История</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Обществознание">Обществознание</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="География">География</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Химия">Химия</label>
+              <label class="subject-check"><input type="checkbox" name="subjects" value="Биология">Биология</label>
+            </div>
           </div>
           <div class="form__group">
             <label class="form__label">Класс / уровень</label>
@@ -454,7 +457,7 @@
         <img src="assets/logo.png" alt="Школа ФизМат" class="logo__img" style="height:34px;width:34px;">
         <span class="logo__name">Школа ФизМат</span>
       </a>
-      <p class="footer__tagline">Онлайн-школа для 1–11 класса: все школьные предметы, подготовка к ОГЭ, ЕГЭ, ВПР и олимпиадам. Своя школа — с 2019 года. Лицензия № Л035-01213-63/02263539.</p>
+      <p class="footer__tagline">Онлайн-школа для 1–11 класса: все школьные предметы, подготовка к ОГЭ, ЕГЭ, ВПР и олимпиадам. Мы работаем с 2019 года. Лицензия № Л035-01213-63/02263539.</p>
     </div>
     <nav class="footer__nav">
       <a href="#about">О школе</a>

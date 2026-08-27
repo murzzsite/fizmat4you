@@ -133,11 +133,11 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
 .process-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
 .step { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; display: flex; flex-direction: column; gap: 10px; }
 .step--accent { background: var(--accent); border-color: var(--accent); }
-.step--accent h3, .step--accent p { color: #fff; }
 .step__num { width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); color: var(--accent); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; }
 .step--accent .step__num { background: rgba(255,255,255,0.2); color: #fff; }
 .step h3 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; }
 .step p { font-size: 13px; color: var(--text-2); line-height: 1.55; }
+.step--accent h3, .step--accent p { color: #fff; }
 
 /* ===== FOR WHOM ===== */
 .forwho { padding: 88px 0; }
@@ -183,6 +183,10 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
 .form__input:focus { border-color: var(--accent); }
 .form__select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%2393a0b8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
 .form__textarea { resize: vertical; min-height: 90px; }
+.subject-check { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text); cursor: pointer; }
+.subject-check input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+.subject-check--all { font-weight: 600; margin-bottom: 4px; }
+.subjects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 16px; padding: 14px 16px; background: var(--bg); border: 1.5px solid var(--border); border-radius: 10px; }
 .form__privacy { font-size: 12px; color: var(--text-3); text-align: center; }
 .form__privacy a { color: var(--text-2); }
 
@@ -242,6 +246,7 @@ body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; colo
   .hero__cards { grid-template-columns: 1fr 1fr; }
   .process-grid { grid-template-columns: 1fr; }
   .form-wrap { padding: 24px 20px; }
+  .subjects-grid { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
   .price-row { grid-template-columns: 1fr; gap: 4px; }
   .price-row div:last-child { font-size: 15px; }
